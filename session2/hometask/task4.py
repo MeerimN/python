@@ -13,9 +13,7 @@ elif player1 == "scissors" and player2 == "rock":
     print("Player2 wins")
 elif player1 == "paper" and player2 == "rock":
     print("Player1 wins")
-elif player1 == "paper" and player2 == "scissor":
+elif player1 == "paper" and player2 == "scissors":
     print("Player2 wins")
 elif player1 == player2:
     print("It's a tie")
-else:
-    print("Invalid input")
