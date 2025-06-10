@@ -73,17 +73,52 @@
 #           print(i) 
                   
 
-range_num = int(input("Range: "))
-break_point = int(input("Break: "))
 
-if range_num < break_point:
-    print("Out of range")
+# Lists | Tuple | Dictionaries  | Sets --> Data types that can hold 0 or more vlaues
+# List is a data type that can hold 0 or more values
+# List starts with []
+
+# print the r in world
+# lst = ["Hello", "world", 10, 10.5, True, ["Hello", "Test"]]
+# print(lst[1][2])
+
+# # print each fruit by itself
+# lst_fruits = ["pineapple", "pear", "aoricot", "peach"]
+# # append function adds element at the end of the list
+# lst_fruits.append('apple')
+# lst_fruits.append('grape')
+
+# print(lst_fruits)
+
+#insert
+# lst_fruits = ["pineapple", "pear", "aoricot", "peach"]
+# lst_fruits.insert(2, 'apple')
+# lst_fruits.insert(0, 'banana')
+# print(lst_fruits)
+
+# lst_fruits = ["pineapple", "pear", "apricot", "peach"]
+# lst_fruits.pop()
+# print(lst_fruits)
+
+# lst_fruits = ["pineapple", "pear", "apricot", "peach"]
+# lst_fruits.pop(1)
+# print(lst_fruits)
+
+# lst_fruits = ["pineapple", "pear", "apricot", "peach", "pear"]
+
+# lst_fruits[0] = lst_fruits[-1]  # [0 is the location pineapple and [-1 is asking to replace it with pear ie last one]]
+# print(lst_fruits)
+
+lst_fruits = ["pineapple", "pear", "kiwi", "apricot", "peach", "pear", "cherry", "melon"]
+filetered_fruits = []
+
+inp = input("Input a character: ")
+for fruit in lst_fruits:
+   if inp in fruit:
+      filetered_fruits.append(fruit)
+
+if len(filetered_fruits) == 0:
+    print("No fruit contains this character")
 else:
-    num = 0
-    while num < range_num:
-        if break_point 
-    print(num)
-    num += 1
-
-
-# Lists     
+    print(filetered_fruits)
+    
