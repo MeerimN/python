@@ -17,11 +17,11 @@
 # Finding second largest number
 lst_numbers = input("Please enter numbers separated by space:" )
 numbers = [int(x) for x in lst_numbers.split()]
-first = second = float('-inf')
+largest = second = float('-inf')
 for num in numbers:
-    if num > first:
-        second = first
-        first = num
-    elif first > num > second:
+    if num > largest:
+        second = largest
+        largest = num
+    elif largest > num > second:
          second = num
 print("The second largest number:", second)
