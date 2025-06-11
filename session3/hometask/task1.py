@@ -7,8 +7,8 @@
 # Output:
 # Reversed List: [5, 4, 3, 2, 1]
 
-inp = input("Please enter numbers separated by space:" )
-numbers = inp.split()
+lst_numbers = input("Please enter numbers separated by space:" )
+numbers = lst_numbers.split()
 reversed_list = []
 for i in range(len(numbers)-1, -1, -1):
     reversed_list.append(numbers[i])
