@@ -189,16 +189,10 @@
 
 
 students = {
-    1 : {"first name": "Anna", "last_name": "Smith", "DOB": "11.12.2003"}, 
-    2 : {"first name": "Alan", "last_name": "Black", "DOB": "10.08.2000"},
-    3 : {"first name": "Veronica", "last_name": "White", "DOB": "3.10.1999"}
+    1 : {"first_name": "Anna", "last_name": "Smith", "DOB": "11.12.2003"}, 
+    2 : {"first_name": "Alan", "last_name": "Black", "DOB": "10.08.2000"},
+    3 : {"first_name": "Veronica", "last_name": "White", "DOB": "3.10.1999"}
 }
-
-# for element in students:
-#    print("Hello I'm", (students[]["first_name"]["last_name"]), "I was born in ", (students["DOB"]), "I am the student number ", (students[1]))
-
-# for element in students:
-#    print("Hello I'm, (students[]["first_name"]["last_name"])) 
 
 for key, value in students.items():
     print(f"Hello I'm {value['first_name']} {value['last_name']}.I was born in {value['DOB']}")
